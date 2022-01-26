@@ -13,7 +13,7 @@ import Projects from './pages/projects';
 export default function Rotas() {
     return (
        
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Routes>
                 <Route path="/" exact element={<Home/>} />
                 <Route path="/contacts" element={<Contact/>}/>
