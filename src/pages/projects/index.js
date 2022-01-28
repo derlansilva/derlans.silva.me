@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-import './styles.css';
 import { IconContext } from 'react-icons';
 
 import background from '../images/background.jpg'
@@ -10,6 +9,7 @@ import photo from '../images/photo.jpg'
 
 import Right from '../components/containerRight';
 import MenuResponsive from '../components/menuResponsive';
+import Background from '../components/background';
 
 
 function Navbar() {
@@ -18,22 +18,15 @@ function Navbar() {
     const showSidebar = () => setSidebar(!sidebar);
 
     return (
-        <div className="container">
-            <div className="project--vetical">
-                <div className="project--horizontal">
-                    <div className="project--description">
+        <>
 
-                    </div>
+            <div className='content--left'>
+                <div className="home--page">
+                    Aqui vai meus projetos
                 </div>
             </div>
 
-
-            <div className='project--left'>
-
-                div esquerda
-            </div>
-
-            <div className="project--right">
+            <div className="content--right">
                 <Link to='#' className='menu-bars'>
                     <FaIcons.FaBars onClick={showSidebar} />
                 </Link>
@@ -49,48 +42,15 @@ function Navbar() {
                                     <AiIcons.AiOutlineClose />
                                 </Link>
                             </li>
-                            <MenuResponsive/>
+                            <MenuResponsive />
                         </ul>
                     </nav>
                 </IconContext.Provider>
             </div>
 
-        </div>
+        </>
     );
 }
 
 export default Navbar;
 
-
-/***
- * 
- *   <div className='container--background'>
-            <div className='navbar'>
-                        <Link to='#' className='menu-bars'>
-                            <FaIcons.FaBars onClick={showSidebar} />
-                        </Link>
-                    </div>
-                <section className="project" style={{
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'certer',
-                    backgroundImage: `url(${background})`
-
-                }}>
-
-                    <div class="project--vetical">
-                        <div class="project--horizontal">
-                            <div class="project--description">
-                                <div className='project--left'>
-                                    div left
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-
-                </section>
-            </div>
-
- */

@@ -1,107 +1,16 @@
-.container{
-    margin: 0;
-    padding: 0;
+
+.contact--main{
+    width: 50%;
+
     display: flex;
-    align-items: center;
-    justify-content: center;
-    
+    margin: auto;
 }
-
-.home--right{
-    position: absolute;
-    width: 20%;
-    height: 100%;
-    right: 0;
-    z-index: 999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-
-}
-.home--opacity{
-    background-color: #111;
-    opacity: 0.3;
-    color: #fff;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 100;
-}
-.home--profile{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 999;
-    width: 100%;
-}
-.home--profile span{
-    color: #46d469;
-    font-size: 20px;
-}
-
-.home--right ul{
-    margin-top: 30px;
-    width: 100%;
-    margin-right: 30px;
-
-    text-align: center;
-}
-.home--right li{
-    list-style-type: none;
-    width: 100%;
-    height: 35px;
-    font-size: 20px;
-    color: rgb(212, 208, 218);
-    margin-top: 3px;
-    transition: all ease 0.s;
-    text-align: center;
-    padding: 3px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-
-.contact--left{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    left: 0;
-}
-
 .contact{
-    height: 100vh;
-}
-
-.contact--vetical{
-    display: flex;
-    align-items: center;
-    width: inherit;
-    height: inherit;
-    background: linear-gradient(to top , #111 10% , transparent 90%);
-}
-.contact--horizontal{
-    width: inherit;
-    height: inherit;
-    background: linear-gradient(to right , #111 30% , transparent 70%);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 50%;
     justify-content: center;
-    padding-left: 300px;
-    padding-bottom: 150px;
-    padding-top: 70px;
-}
-
-
-.contact--description{
-    margin-top: 15px;
-    font-size: 20px;
-    color: #46d469;
-    width: 300px;
 }
 
 

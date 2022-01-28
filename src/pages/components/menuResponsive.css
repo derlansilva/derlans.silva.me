@@ -1,4 +1,4 @@
-.project--right--profile{
+.content--profile{
     position: absolute;
     display: flex;
     justify-content: center;
@@ -9,14 +9,14 @@
     margin-top:30px;
     left: 0;
   }
-  .project--right--profile ul{
+  .content--profile ul{
     margin-top: 30px;
   }
   a{
     text-decoration: none;
   }
   
-  .project--right--profile li{
+  .content--profile li{
     display: flex;
     color: #fff;
     width: 50vh;
@@ -25,13 +25,13 @@
     height: 50px;
     transition: all ease 0.5s;
   }
-  .project--right--profile span{
+  .content--profile span{
       color: #46d469;
       font-size: 20px;
   
   }
   
-  .project--right--profile li:hover{
+  .content--profile li:hover{
     background-color: #111;
     border-radius: 5px;
   }
@@ -70,7 +70,7 @@
       width: 80%;
     }
   
-    .project--left{
+    .content--left{
       position: absolute;
       width: 100%;
       display: flex;
@@ -78,7 +78,19 @@
       height: 99vh;
       float: left;
       left: 0;
-      border: solid 2px #46d469;
   }
+  .contact--main{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    left: 0;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
   
   }

@@ -1,15 +1,15 @@
 import React from "react";
 import photo from '../images/photo.jpg'
-import './style.css'
+import './right.css'
 
-const right = () => {
+const Right = () => {
     return (
         
-        <div className="right" >
+        <div className="menu--right" >
             
-            <div className="right--opacity">
+            <div className="menu--opacity">
             </div>
-            <div className="right--profile" >
+            <div className="menu--profile" >
                 <a href="https://raw.githubusercontent.com/derlansilva/derlansilva/main/img/photo.jpg">
                     <img className="right--photo" src={photo} alt="..." />
                 </a>
@@ -78,4 +78,4 @@ const right = () => {
 }
 
 
-export default right;
+export default Right;

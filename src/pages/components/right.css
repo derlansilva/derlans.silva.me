@@ -1,34 +1,6 @@
 
-.container{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
 
-.project--vetical{
-    display: flex;
-    align-items: center;
-    width: inherit;
-    height: inherit;
-    background: linear-gradient(to top , #111 10% , transparent 90%);
-}
-.project--horizontal{
-    width: inherit;
-    height: inherit;
-    background: linear-gradient(to right , #111 30% , transparent 70%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 300px;
-    padding-bottom: 150px;
-    padding-top: 70px;
-}
-
-
-.right{
+.menu--right{
     position: fixed;
     width: 20%;
     height: 100%;
@@ -38,10 +10,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
-
+    margin-top: 0;
 }
-.right--opacity{
+.menu--opacity{
     background-color: #111;
     opacity: 0.3;
     color: #fff;
@@ -50,7 +21,7 @@
     position: absolute;
     z-index: 100;
 }
-.right--profile{
+.menu--profile{
     position: absolute;
     display: flex;
     justify-content: center;
@@ -59,25 +30,25 @@
     z-index: 999;
     width: 100%;
 }
-.right--profile span{
+.menu--profile span{
     color: #46d469;
     font-size: 20px;
 }
 
-.right--profile a{
+.menu--profile a{
   
         text-decoration: none;
    
 }
 
-.right ul{
+.menu--right ul{
     margin-top: 30px;
     width: 100%;
     margin-right: 30px;
 
     text-align: center;
 }
-.right li{
+.menu--right li{
     list-style-type: none;
     width: 100%;
     height: 35px;
@@ -94,7 +65,27 @@
 }
 
 
-.right li:hover{
+.li--icon{
+    width: 30%;
+}
+.li--name{
+    text-align: left;
+    width: 70%;
+}
+
+.home--right li:hover{
+    background-color: #111;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.home--photo{
+    width:140px;
+    height: 140px;
+    border-radius: 140px;
+}
+
+
+.menu--right li:hover{
     background-color: #111;
     cursor: pointer;
     border-radius: 3px;

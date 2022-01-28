@@ -6,6 +6,8 @@ import * as AiIcons from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { IconContext } from 'react-icons';
 
+import TypeWriter from '../components/writeComponent/write'
+
 import background from '../images/background.jpg'
 import './style.css'
 
@@ -17,19 +19,21 @@ export default function Home() {
 
     const showSidebar = () => setSidebar(!sidebar);
     return (
-        <div className="container">
+        <>
+            <div className='content--left'>
+                <div className="home--page">
+                    <div className="home--main">
 
-           <Background/>
+                    <div className="home--name">Hello! Welcome to my page</div>
+                    <div className="home--description">
+                        <TypeWriter value="I´m Software developer  Python , Javascript" />
+                    </div>
 
-
-            <div className='home--left'>
-                <div className="home--name">Hello! Welcome to my page</div>
-                <div className="home--description">
-                    I´m Software developer  Python , Javascript
+                    </div>
                 </div>
             </div>
 
-            <div className="project--right">
+            <div className="content--right">
                 <Link to='#' className='menu-bars'>
                     <FaIcons.FaBars onClick={showSidebar} />
                 </Link>
@@ -37,7 +41,6 @@ export default function Home() {
                     <div className='show--right'>
                         <Right />
                     </div>
-
                     <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
                         <ul className='nav-menu-items' onClick={showSidebar}>
                             <li className='navbar-toggle'>
@@ -45,11 +48,13 @@ export default function Home() {
                                     <AiIcons.AiOutlineClose />
                                 </Link>
                             </li>
-                            <MenuResponsive/>
+                            <MenuResponsive />
                         </ul>
                     </nav>
                 </IconContext.Provider>
             </div>
-        </div>
+
+
+        </>
     )
 }

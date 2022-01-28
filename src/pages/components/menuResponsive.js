@@ -16,7 +16,7 @@ const MenuResponsive = ( ) => {
   
 
     return (
-        <div className="project--right--profile" >
+        <div className="content--profile" >
         <a href="https://raw.githubusercontent.com/derlansilva/derlansilva/main/img/photo.jpg">
             <img className="project--right--photo" src={photo} alt="..." />
         </a>

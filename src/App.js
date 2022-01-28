@@ -4,11 +4,13 @@ import Rotas from './routes';
 
 
 import './App.css'
+import Background from './pages/components/background';
 function App() {
   return (
-    <>
+    <div className="container">
+      <Background/>
         <Rotas/>
-    </>
+    </div>
   );
 }
 
