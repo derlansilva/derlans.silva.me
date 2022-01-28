@@ -1,92 +1,53 @@
-
+body{
+  background-image: url('../images/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
 
 .container{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     
+  width: 100vw;
+  height: 100vh;
+  display: flex;
 }
 
-.project--background{
-
-    background-image: url('../images/background.jpg');
-    background-size: cover;
-    background-position: center;
-
-   width: 100%;
-   height: 100%;
-   left: 0;
-}
-
-.home--right{
-    position: absolute;
-    width: 20%;
-    height: 100%;
-    right: 0;
-    z-index: 999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.home--opacity{
-    background-color: #111;
-    opacity: 0.3;
-    color: #fff;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 100;
-}
-.home--profile{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 999;
-    width: 100%;
-}
-.home--profile span{
-    color: #46d469;
-    font-size: 20px;
-}
-
-.home--right ul{
-    margin-top: 30px;
-    width: 100%;
-    margin-right: 30px;
-
-    text-align: center;
-}
-.home--right li{
-    list-style-type: none;
-    width: 100%;
-    height: 35px;
-    font-size: 20px;
-    color: rgb(212, 208, 218);
-    margin-top: 3px;
-    transition: all ease 0.5s;
-    text-align: center;
-    padding: 3px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-
-.project--background{
+  .project--background{
     position: relative;
     width: 100%;
     height: 100%;
     left: 0;
+  }
+  
+
+
+.project--left{
+    position: absolute;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    height: 99vh;
+    float: left;
+    left: 0;
+    border: solid 2px #46d469;
 }
 
-.project{
+.project--right{
+    position: absolute;
+    float: right;
+    width: 20%;
     height: 100vh;
+    right: 0;
+    display: flex;
+    justify-content: center;
 }
+
 
 .project--vetical{
     display: flex;
@@ -101,41 +62,134 @@
     background: linear-gradient(to right , #111 30% , transparent 70%);
     display: flex;
     flex-direction: column;
-    padding-left: 30px;
+    justify-content: center;
+    padding-left: 300px;
     padding-bottom: 150px;
     padding-top: 70px;
-    
-}
-
-.project--name{
-    font-size: 60px;
-    font-weight: bold;
-    opacity: 0.5;
-}
-
-.home--info{
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 10px;
 }
 
 
-.project--description{
-    margin-top: 15px;
-    font-size: 20px;
+
+
+.menu-bars {
+ color: #FFF;
+  font-size: 2rem;
+  background: none;
+  right: 0;
+  margin-top: 10px;
+  left: 5px;
+  text-decoration: none;
+}
+
+.menu-bars svg{
+  display: none;
+}
+li{
+  text-emphasis: none;
+  list-style-type: none;
+}
+
+.nav-menu {
+  background-color: #060b26;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  transition: 850ms;
+}
+
+.nav-menu.active {
+  right: 0;
+  transition: 350ms;
+  text-decoration: none;
+  width: 30%;
+}
+
+.project--right--profile{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 999;
+  width: 100%;
+  margin-top:30px;
+  left: 0;
+}
+.project--right--profile ul{
+  margin-top: 30px;
+}
+a{
+  text-decoration: none;
+}
+
+.project--right--profile li{
+  display: flex;
+  color: #fff;
+  width: 50vh;
+  text-align: center;
+  text-decoration: none;
+  height: 50px;
+  transition: all ease 0.5s;
+}
+.project--right--profile span{
     color: #46d469;
-    
+    font-size: 20px;
 
 }
 
+.project--right--profile li:hover{
+  background-color: #111;
+  border-radius: 5px;
+}
 
-.project--conteudo{
-    position: absolute;
-    border: solid 1px black;
+.project--right--photo{
+  width:140px;
+  height: 140px;
+  border-radius: 140px;
+}
+
+.li--name{
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.li--icon{
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+
+
+@media (max-width : 768px){
+  body {
+    overflow-x: hidden;
+  }
+  .menu-bars svg{
+    display: grid;
+  }
+  .show--right{
+    display: none;
+  }
+  .nav-menu.active {
+    right: 0;
+    transition: 350ms;
+    text-decoration: none;
     width: 80%;
-    height: 299999999px;
-    z-index: 1000;
-    margin-left: 0;
+  }
+
+  .project--left{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 99vh;
+    float: left;
+    left: 0;
+    border: solid 2px #46d469;
 }
 
-
+}
