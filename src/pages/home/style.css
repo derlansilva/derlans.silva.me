@@ -1,26 +1,31 @@
-
 .container{
-    margin: 0;
-    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+  }
+
+.home--left{
+    position: absolute;
+    width: 80%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    height: 99vh;
+    float: left;
+    left: 0;
+    border: solid 2px #46d469;
 }
 
 .home--right{
     position: absolute;
+    float: right;
     width: 20%;
-    height: 100%;
+    height: 100vh;
     right: 0;
-    z-index: 999;
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
-
-
 }
+
+
 .home--opacity{
     background-color: #111;
     opacity: 0.3;
@@ -84,11 +89,20 @@
     height: 140px;
     border-radius: 140px;
 }
+
 .home--left{
-    position: relative;
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    height: 99vh;
+    float: left;
     left: 0;
+    border: solid 2px #46d469;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .home{

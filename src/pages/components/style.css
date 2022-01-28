@@ -8,6 +8,26 @@
     
 }
 
+.project--vetical{
+    display: flex;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top , #111 10% , transparent 90%);
+}
+.project--horizontal{
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right , #111 30% , transparent 70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 300px;
+    padding-bottom: 150px;
+    padding-top: 70px;
+}
+
+
 .right{
     position: fixed;
     width: 20%;

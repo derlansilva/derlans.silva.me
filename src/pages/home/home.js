@@ -1,36 +1,55 @@
-import React from "react"
+import React, { useState } from "react"
 import Right from "../components/containerRight"
+
+import * as FaIcons from 'react-icons/fa';
+import * as AiIcons from 'react-icons/ai';
+import { Link } from 'react-router-dom';
+import { IconContext } from 'react-icons';
 
 import background from '../images/background.jpg'
 import './style.css'
 
+import MenuResponsive from "../components/menuResponsive";
+import Background from "../components/background";
 export default function Home() {
+
+    const [sidebar, setSidebar] = useState(false);
+
+    const showSidebar = () => setSidebar(!sidebar);
     return (
         <div className="container">
-            <div className="home--left">
-                <section className="home" style={{
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'certer',
-                    backgroundImage: `url(${background})`
 
-                }}>
-                    <div className="home--vetical">
-                        <div className="home--horizontal">
-                            <div className="home--name">Hello! Welcome to my page</div>
-
-                            <div className="home--description">
-                                I´m Software developer  Python , Javascript
-                            </div>
+           <Background/>
 
 
-                        </div>
-                    </div>
-
-
-                </section>
+            <div className='home--left'>
+                <div className="home--name">Hello! Welcome to my page</div>
+                <div className="home--description">
+                    I´m Software developer  Python , Javascript
+                </div>
             </div>
 
-                <Right/>
+            <div className="project--right">
+                <Link to='#' className='menu-bars'>
+                    <FaIcons.FaBars onClick={showSidebar} />
+                </Link>
+                <IconContext.Provider value={{ color: '#fff' }}>
+                    <div className='show--right'>
+                        <Right />
+                    </div>
+
+                    <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
+                        <ul className='nav-menu-items' onClick={showSidebar}>
+                            <li className='navbar-toggle'>
+                                <Link to='#' className='menu-bars'>
+                                    <AiIcons.AiOutlineClose />
+                                </Link>
+                            </li>
+                            <MenuResponsive/>
+                        </ul>
+                    </nav>
+                </IconContext.Provider>
+            </div>
         </div>
     )
 }
