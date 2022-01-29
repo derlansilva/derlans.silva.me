@@ -8,11 +8,9 @@ import { IconContext } from 'react-icons';
 
 import TypeWriter from '../components/writeComponent/write'
 
-import background from '../images/background.jpg'
 import './style.css'
 
 import MenuResponsive from "../components/menuResponsive";
-import Background from "../components/background";
 export default function Home() {
 
     const [sidebar, setSidebar] = useState(false);
@@ -44,7 +42,7 @@ export default function Home() {
                     <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
                         <ul className='nav-menu-items' onClick={showSidebar}>
                             <li className='navbar-toggle'>
-                                <Link to='#' className='menu-bars'>
+                                <Link to='#' className='menu--close'>
                                     <AiIcons.AiOutlineClose />
                                 </Link>
                             </li>

@@ -90,3 +90,27 @@ li{
   text-decoration: none;
   width: 30%;
 }
+
+.navbar-toggle{
+  width: 100%;
+  left: 0;
+  width: 100%;
+  height: 50px;
+}
+
+
+
+.menu--close svg{
+  left: 0;
+  width: 30px;
+  height: 30px;
+  margin-left: 0;
+  background-color: rgb(211, 20, 20);
+  border-radius: 5px;
+  
+}
+
+.nav-menu-items{
+  width: 100%;
+  height: 100%;
+}

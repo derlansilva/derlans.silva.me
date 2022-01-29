@@ -14,7 +14,6 @@ const MenuResponsive = ( ) => {
 
     const showSidebar = () => setSidebar(!sidebar);
   
-
     return (
         <div className="content--profile" >
         <a href="https://raw.githubusercontent.com/derlansilva/derlansilva/main/img/photo.jpg">
