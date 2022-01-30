@@ -9,6 +9,7 @@ import Contact from './pages/contacts/contacts';
     
 import Home from './pages/home/home'
 import Projects from './pages/projects';
+import Suggestions from './pages/suggestions/suggestions';
 
 
 export default function Rotas() {
@@ -19,6 +20,8 @@ export default function Rotas() {
                 <Route path="/" exact element={<Home/>} />
                 <Route path="/contacts" element={<Contact/>}/>
                 <Route path="/projects" element={<Projects/>} />
+                <Route path="/suggestions" element={< Suggestions/>}/>
+                
             </Routes>
         </BrowserRouter>
     );
