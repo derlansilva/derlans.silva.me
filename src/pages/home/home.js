@@ -32,9 +32,11 @@ export default function Home() {
             </div>
 
             <div className="content--right">
+              
                 <Link to='#' className='menu-bars'>
                     <FaIcons.FaBars onClick={showSidebar} />
                 </Link>
+               
                 <IconContext.Provider value={{ color: '#fff' }}>
                     <div className='show--right'>
                         <Right />

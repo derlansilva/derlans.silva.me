@@ -6,7 +6,7 @@
     flex-direction: column;
     z-index: 999;
     width: 100%;
-    margin-top:20px;
+    margin-top:-10px;
     left: 0;
   }
   .content--profile ul{
@@ -37,9 +37,9 @@
   }
   
   .project--right--photo{
-    width:140px;
-    height: 140px;
-    border-radius: 140px;
+    width:100px;
+    height: 100px;
+    border-radius: 100px;
   }
   
   .li--name{
@@ -67,7 +67,7 @@
       right: 0;
       transition: 350ms;
       text-decoration: none;
-      width: 80%;
+      width: 100%;
     }
   
     .content--left{
@@ -92,5 +92,14 @@
       width: 100%;
       justify-content: center;
   }
-    
+  
+  .form--suggestions{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #46d469;
+    min-width: 100px;
+    min-height: 100px;
+    align-items: center;
+    justify-content: center;
+  }
 }
