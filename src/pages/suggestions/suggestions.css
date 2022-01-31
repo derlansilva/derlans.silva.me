@@ -112,7 +112,7 @@
     .suggestions--input{
         width: 250px;
         height: 30px;
-        border:  dashed 1px #FFF;
+        border:  solid 1px #FFF;
         border-radius: 3px;
         margin-top: 10px;
     }
@@ -121,7 +121,7 @@
         width: 250px;
         min-width: 250px;
         height: 200px;
-        border:  dashed 1px #FFF;
+        border:  solid 1px #FFF;
         border-radius: 3px;
         background: none;
         color: #FFF;

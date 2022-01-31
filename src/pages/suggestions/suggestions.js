@@ -26,7 +26,7 @@ export default function Suggestions() {
                         <form className='form--suggestions' onChange={handleSubmit}>
                             <span>email</span>
                             <imput type="email" className="suggestions--input" name="email"/>
-                            <span>Sugestões</span>
+                            <span>Descrição</span>
                             <textarea className='suggestions--area' placeholder='escreva aqui sua sugestão de melhoria'/>
                             <button type='submit'>Enviar sugestão</button>
                         </form>

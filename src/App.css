@@ -11,12 +11,7 @@
     color:aliceblue;
     font-family: 'Roboto', sans-serif;
     height: 100%;
-    overflow-x: hidden;
-    background-image: url('./pages/images/background.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
+   
     
     width: 100vw;
     height: 100vh;

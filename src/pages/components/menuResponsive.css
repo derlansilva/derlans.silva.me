@@ -92,14 +92,4 @@
       width: 100%;
       justify-content: center;
   }
-  
-  .form--suggestions{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #46d469;
-    min-width: 100px;
-    min-height: 100px;
-    align-items: center;
-    justify-content: center;
-  }
 }
