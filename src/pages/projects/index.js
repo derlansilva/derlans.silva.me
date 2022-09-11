@@ -8,10 +8,7 @@ import { IconContext } from 'react-icons';
 
 import Right from '../components/containerRight';
 import MenuResponsive from '../components/menuResponsive';
-import reactnative from '../../pages/images/react_native.gif'
-import node from '../../pages/images/node.gif'
-import reactjs from '../../pages/images/reactjs.gif'
-import python from '../../pages/images/python.gif'
+import netflixclone from '../images/netflixclone.png'
 
 
 import './styles.css'
@@ -28,42 +25,19 @@ function Navbar() {
             <div className='content--left'>
                 <div className="home--page">
                     <div className='skills--page'>
-
+                        <a href='http://localhost:3000' target="_blank" rel="noopener noreferrer">
                         <div className='skill--section'>
                             <div className='skill--list'>
-                                <div className='skill--tema'>Desenvolvimento de aplicatiovos com React-native</div>
-                                <img className='skill--image' src={reactnative} />
+                                <div className='skill--tema'>Netflix clone</div>
+                                <img className='skill--image' src={netflixclone} />
                                 <div className='skill--text'>
-                                    No ano de 2020 desidi iniciar o aprendizado de uma nova tecnologia 
-                                    na qual foi desenvolvido essa pagina
-                                    apos assitir um video no you tube , e me apaixonei de imediato pelo reactjs
+                                    apenas com intuito academico , desenvolvi um clone da netflix , 
+                                    usando uma api externa que lista os filmes e series , desenvolvida em react         
                                 </div>
                             </div>
                         </div>
-                        <div className='skill--section'>
-                            <div className='skill--list'>
-                                <div className='skill--tema'>Desenvolvimento front-end com React</div>
-                                <img className='skill--image' src={reactjs} />
-                                <div className='skill--text'>
-                                    No ano de 2020 desidi iniciar o aprendizado de uma nova tecnologia 
-                                    na qual foi desenvolvido essa pagina
-                                    apos assitir um video no you tube , e me apaixonei de imediato pelo reactjs
-                                </div>
-                            </div>
-                        </div>
-                        <div className='skill--section'>
-                            <div className='skill--list'>
-                                <div className='skill--tema'>Desenvolvimento back-end com Node.js</div>
-                                <img className='skill--image' src={node} />
-                            </div>
-                        </div>
-                        <div className='skill--section'>
-                        <div className='skill--list'>
-                            <div className='skill--tema'>Desenvolvimento Backend Python</div>
-                            <img className='skill--image' src={python} />
-                        </div>
+                        </a>
 
-                        </div>
 
                     </div>
                 </div>

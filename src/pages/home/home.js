@@ -24,6 +24,7 @@ export default function Home() {
 
                     <div className="home--name">Hello! Welcome to my page</div>
                     <div className="home--description">
+                       
                         <TypeWriter value="I´m Software developer  Python , Javascript" />
                     </div>
 

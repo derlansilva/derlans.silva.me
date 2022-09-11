@@ -1,0 +1,170 @@
+.content-header{
+    position: absolute;
+    width:100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+
+    background: #111;
+ 
+}
+
+.header{
+    width: 80%;
+    height: 40px;
+    display:flex;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    
+    animation : scale-top 0.5s 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes scale-top{
+    0% {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+        opacity: 1;
+      }
+      100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 1;
+      }
+}
+
+
+.navigation{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.navigation ul{
+    position: absolute;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    right: 20%;
+ 
+}
+.navigation ul li{
+    position: relative;
+    list-style: none;
+    text-align: center;
+    width: 95px;
+    height: 100%;
+    color: #fff;
+    
+    
+}
+.navigation ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-weight: 500;
+  
+}
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #eaeaf0;
+    width: 100%;
+    transition: all ease 0.9s;
+}
+.navigation ul li:hover a  .icon{
+    transform: translateY(50px);
+    background: #fff;
+    color: #111;
+    width: 60px; 
+    height: 60px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transition: all ease 0.9s;
+    
+}
+.navigation ul li.active a .icon{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #46d469;
+    border-bottom: #46d469 solid 3px;
+    height: 60px;
+    width: 80px;
+    transition: all ease 0.9s;
+}
+.navigation ul li.active:hover a .icon{
+    transform: translateY(50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #46d469;
+    border-bottom: #46d469 solid 3px;
+    height: 60px;
+    width: 60px;
+    transition: all ease 0.9s;
+}
+
+.navigation ul li.active a .text{
+    color: #fff;
+    
+}
+.navigation ul li a .text{
+    position: absolute;
+    
+    color:  #fff;
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.navigation ul li:hover a .text{
+    opacity: 1;
+    transform: translateX(2px);
+    font-size: 20px;
+    color:  #fff;
+    width: 120px; 
+    height: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: transition 4s ease ;
+    
+}
+
+.navigation ul li:nth-child(1){
+    animation: slit-in-vertical 1s 3.4s ease-out both;
+}
+
+.navigation ul li:nth-child(2){
+    animation : slit-in-vertical 1s 3.8s ease-out both;
+}
+.navigation ul li:nth-child(3){
+    animation: slit-in-vertical 1s 4.1s ease-out both ;
+}
+.navigation ul li:nth-child(4){
+    animation: slit-in-vertical 1s 4.5s ease-out both;
+}
+.navigation ul li:nth-child(5){
+    animation: slit-in-vertical 1s 4.9s ease-out both;
+}
