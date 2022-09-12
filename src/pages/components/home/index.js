@@ -10,7 +10,7 @@ export const Home = () => {
             <div className="content-word-one">
                 welcome to my page
             </div>
-            <div>
+            <div className="content-word-two">
                 <TypeAnimation
                     sequence={[
                         '            ',
@@ -18,17 +18,17 @@ export const Home = () => {
                     ]}
                     wrapper="div"
                     cursor={false}
-                    style={{ fontSize: '1.1em' }}
+                    style={{ fontSize: '1.4em' }}
                 />
 
             </div>
-            <div className="content-word-two">
+            <div className="content-word-three">
                 <TypeAnimation
                     sequence={['                                          ', 0, 'Javascript', 5000, 'python', 6000,]}
                     wrapper="h1"
                     cursor={false}
                     repeat={Infinity}
-                    style={{ fontSize: '2em' }}
+                    style={{ fontSize: '1.2em' }}
                 />
 
             </div>

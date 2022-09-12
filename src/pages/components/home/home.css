@@ -24,3 +24,16 @@
     position:relative;
     color:#46d469;
 }
+
+
+.content-word-two{
+    margin-top: 40px;
+    position:relative;
+    color:#fff;
+}
+
+.content-word-three{
+    margin-top: -30px;
+    position:relative;
+    color:#46d469;
+}

@@ -16,7 +16,7 @@
     display: flex;
     justify-content: space-between;
     color: #fff;
-    
+    padding: 10px 0 0 0;
     animation : scale-top 0.5s 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
@@ -54,7 +54,7 @@
     text-align: center;
     height: 100%;
     right: 20%;
- 
+   
 }
 .navigation ul li{
     position: relative;
